@@ -1,0 +1,156 @@
+/*! * PARR page CSS (HMcCullough) */
+
+
+
+/*h1 {
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+.start {
+    width: 375px;
+}*/
+
+p, a  {
+    font-size: smaller;
+}
+
+h2  {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+a.parr-question {
+    color: #600;
+    font-size: large;
+    margin-top: 15px;
+    text-decoration: none;
+    border-top: thin solid #bbb;
+    /*width: 375px;*/
+    text-align: left;
+}
+
+#parr-unsure, #archive-options {
+    margin: 35px auto;
+    border-bottom: thin solid #bbb;
+}
+
+#parr h4, h5  {
+    font-weight: bold;
+}
+
+#parr-unsure > p  {
+    margin: 2px auto auto 20px;
+
+}
+
+#parr-unsure > div.details  {
+    margin: 0 20px;
+}
+
+#parr-unsure > h4  {
+    /*margin: 20px auto;*/
+    /*padding: 7px;*/
+    border-bottom: thin solid #ddd;
+}
+
+#parr-unsure .question-box    {
+    width: 350px;
+    margin: 30px auto;
+    text-align: center;
+    padding: 10px;
+    border: 3px solid #ddd;
+    background-color: #eee;
+}
+
+#parr  p  {
+    margin: 2px auto 20px 20px;
+    font-size: smaller;
+}
+#parr  a {
+    margin: auto;
+}
+
+.archive-options-content {
+
+}
+
+#archive-options .thumbnail .caption {
+    padding: 0 9px;
+}
+
+.panel  {
+    border:none;
+}
+
+.panel-default > .panel-heading  {
+    background-color: #eee;
+    border-bottom: thin solid #ccc;
+    font-weight: bold;
+}
+
+
+/* Custom CSS */
+/*div.viewLess {
+    height: 155px;
+    overflow: hidden;
+    position: relative
+}
+
+div.viewLess a {
+    position: absolute;
+    bottom: -4px;
+    left: -1px;
+    z-index: 102
+}
+
+div.viewLess div.gradient {
+    position: absolute;
+    bottom: 15px;
+    left: 0px;
+    height: 20px;
+    width: 100%;
+    z-index: 100;
+    background: -webkit-gradient(linear, 0 0, 0 16, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 1)));
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 0), #FFFFFF 16px);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0, FinishOpacity=100, StartY=0, FinishY=50, Style=1, StartX=0, FinishX=0)";
+    filter: alpha(Opacity=0, FinishOpacity=100, Style=1, StartY=0, FinishY=50, StartX=0, FinishX=0);
+}
+
+div.viewLess div.cover {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 15px;
+    width: 100%;
+    z-index: 101;
+    background-color: #FFFFFF;
+}
+
+div.viewMore {
+    height: auto;
+    position: relative;
+    padding-bottom: 17px;
+}
+
+div.viewMore a {
+    position: absolute;
+    bottom: -4px;
+    left: -1px;
+    z-index: 102;
+}
+
+div.viewMore div.gradient {
+    display: none;
+}
+
+div.viewMore div.cover {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 17px;
+    width: 100%;
+    z-index: 101;
+    background-color: #FFFFFF;
+}*/
+

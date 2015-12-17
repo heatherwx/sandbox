@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Archive Data at the National Centers for Environmental Information | NCEI</title>
+
+
+    <!--<link href="css/bootstrap.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link href="css/parr.css" rel="stylesheet">
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="container">
+
+    <div class="well well-lg" style="height:200px;background-color:#ccc;padding-left:50px;">
+
+        <img class="img-rounded" style="float:right;border:10px solid #999;" width="300"
+                src="http://cdn3.howtogeek.com/wp-content/uploads/2014/10/650x300x00_lead_image_archiving_email.jpg.pagespeed.ic.WRZgOvNN_l.jpg">
+
+        <h1>Archive Data at NCEI</h1>
+
+        <div class="start">
+            <p style="margin-top:30px;"><a role="button" class="btn btn-lg btn-success" id="startButton"
+                    data-complete-text="Do you need to satisfy PARR requirements?"
+                    data-toggle="collapse"
+                    data-target="#parr-question-buttons" autocomplete="off">Start Here</a></p>
+
+            <div class="collapse" id="parr-question-buttons">
+                <button class="btn btn-primary " type="button" data-toggle="collapse" data-target="#parr-yes"
+                        aria-expanded="false" aria-controls="parr-yes">
+                    <span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Yes
+                </button>
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#archive-options"
+                        aria-expanded="false" aria-controls="archive-options">
+                    <span class="glyphicon glyphicon-remove" aria-hidden="true"></span> No
+                </button>
+                <button class="btn btn-default" type="button" data-toggle="collapse" data-target="#parr-unsure"
+                        aria-expanded="false" aria-controls="parr-unsure">
+                    <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Unsure / Help Me Decide
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="collapse" id="archive-options">
+        <div class="row">
+            <h5 style="text-align:center;">Choose an option below. If you're unsure which option is best for your data,
+                <a href="#" data-toggle="modal" data-target="#parr-unsure-modal">ask us</a>.</h5>
+
+            <div class="col-sm-8 col-md-6">
+                <div class="thumbnail" style="background-color:#eee;">
+                    <!--<img src="..." alt="...">-->
+
+                    <div class="caption">
+                        <h3><span class="glyphicon glyphicon-book" aria-hidden="true"></span> SINGLE Data Submission</h3>
+
+                        <ul>
+                            <li>Non-repeating or single delivery data</li>
+                            <li>Data with total volume less than or equal to 20 GB</li>
+                        </ul>
+                        <p>Use <a href="https://www.nodc.noaa.gov/s2n/">Send2NCEI</a><br/><br/></p>
+
+                        <p><a href="https://www.nodc.noaa.gov/s2n/" class="btn btn-primary"
+                                role="button">Submit Data to Send2NCEI</a> <a href="#"
+                                class="btn btn-default"
+                                role="button">More Information</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-8 col-md-6">
+                <div class="thumbnail" style="background-color:#eee;">
+                    <!-- <img src="..." alt="...">-->
+
+                    <div class="caption">
+                        <h3><span class="glyphicon glyphicon-duplicate" aria-hidden="true"></span> MULTIPLE Data Submission</h3>
+
+                        <ul>
+                            <li>Repeating or multiple delivery data</li>
+                            <li>Data with total volume greater than 20 GB</li>
+                        </ul>
+                        <p>Use <a href="https://www.ncdc.noaa.gov/atrac/">Advanced Tracking and Resource tool for
+                            Archive Collections (ATRAC)</a></p>
+
+                        <p><a href="https://www.ncdc.noaa.gov/atrac/" class="btn btn-primary"
+                                role="button">Submit Data to ATRAC</a> <a href="#"
+                                class="btn btn-default"
+                                role="button">More Information</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="collapse" id="parr-unsure">
+
+        <h4>What is Public Access to Research Results (PARR)?</h4>
+
+        <p>The White House Office of Science and Technology Policy (OSTP) has directed Federal agencies to develop plans to make the published results of federally funded research freely available to the public within one year of publication and requiring researchers to better account for and manage the digital data resulting from federally funded scientific research.
+            <a class="btn btn-xs btn-default" title="Click for more information" data-toggle="collapse" data-target="#what">show more</a>
+
+        <div id="what" class="collapse details">
+            Details: <a href="https://www.whitehouse.gov/sites/default/files/microsites/ostp/ostp_public_access_memo_2013.pdf">OSTP PARR Memorandum</a>
+        </div>
+        </p>
+
+        <h4>Who does the NOAA PARR Plan apply to?</h4>
+        <p>(the short answer or teaser) <a class="btn btn-xs btn-default" title="Click for more information" data-toggle="collapse" data-target="#who">show more</a>
+
+        <div id="who" class="collapse details">The NOAA Data Sharing Policy imposes requirements both on NOAA Programs that issue grants and on grant recipients, and to indicate that grant programs must consider whether the resulting data are likely to be worthy of archiving. All grants, contracts, and cooperative agreements will include requirements for data management planning consistent with the goals of the Data Sharing Policy. Terms and Conditions will include language that requires scientists seeking funding to describe how and where they will make their data available to the public and explicitly require the data that underlie the conclusions of peer-reviewed scientific publications be made available for discovery, retrieval, and analysis for free at the time of publication. Appropriate exceptions to these guidelines will also be outlined.</div>
+        </p>
+        <h4>How do I comply with PARR?</h4>
+        <ul>
+            <li>Do this</li>
+            <li>And this</li>
+        </ul>
+        <h4>What is the timeline for NOAA PARR compliance?</h4>
+
+        <p>NOAA intends to have intramural publications and data comply first, followed by extramural results. This will enable NOAA to test new requirements and processes internally before imposing them externally. The OSTP memo is not retrospective. <a class="btn btn-xs btn-default" title="Click for more information" data-toggle="collapse" data-target="#parr-timeline">show more</a>
+        <div id="parr-timeline" class="collapse details"><p>New policies or policy changes established by the NOAA PARR Plan shall apply only to environmental data generated or manuscripts submitted after the publication date of the respective policies. Once the plans take effect, agencies shall report twice yearly (January 1 and July 1) to OSTP and OMB.</p><p>Timeline details: <a href="http://docs.lib.noaa.gov/noaa_documents/NOAA_Research_Council/NOAA_PARR_Plan_v5.04.pdf">NOAA PARR Plan</a></p></div>
+        </p>
+
+        <h4>What is NCEI?</h4>
+        <p>NOAA's National Centers for Environmental Information (NCEI) are responsible for hosting and providing access to one of the most significant archives on earth, with comprehensive oceanic, atmospheric, and geophysical data. NCEI is the Nation's leading authority for environmental information. <a class="btn btn-xs btn-default" title="Click for more information" data-toggle="collapse" data-target="#parr-ncei">show more</a>
+        <div id="parr-ncei" class="collapse details"><a href="http://www.ncei.noaa.gov/">NCEI Website</a> </div>
+        </p>
+
+        <h4>Where do I find more infomation?</h4>
+        <ul>
+            <li>
+                <a href="http://docs.lib.noaa.gov/noaa_documents/NOAA_Research_Council/NOAA_PARR_Plan_v5.04.pdf">NOAA
+                    Plan for Increasing Public Access to Research Results</a></li>
+            <li>
+                <a href="https://www.whitehouse.gov/blog/2013/02/22/expanding-public-access-results-federally-funded-research">White
+                    House: Expanding Public Access to the Results of Federally Funded Research</a></li>
+        </ul>
+
+        <div class="question-box"><h5>Does PARR apply to your data?</h5>
+            <button type="button" class="btn btn-primary" data-target="#"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Yes</button>
+            <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#archive-options"
+                    aria-expanded="false" aria-controls="archive-options"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> No</button>
+            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#parr-unsure-modal"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Still Unsure?</button>
+        </div>
+    </div>
+    <div class="container archive-options-content">
+
+    </div>
+
+    <div class="row">
+
+        <div class="col-md-9">
+            <h4>Data Management &amp; Stewardship</h4>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">Archive Guidelines</div>
+            <div class="panel-body">
+                <ul>
+                    <li><a href="https://geo-ide.noaa.gov/wiki/index.php?title=Main_Page">NOAA Environmental Data Management Wiki</a></li>
+                    <li>Data Management Lifecycle</li>
+                </ul>
+            </div>
+            <div class="panel-heading">Digital Object Identifiers (DOIs)</div>
+            <div class="panel-body">
+                <ul>
+                    <li><a href="https://nosc.noaa.gov/EDMC/PD.DC.php">NOAA Data Citation Procedural Directive</a></li>
+                    <li>
+                        <a href="https://geo-ide.noaa.gov/wiki/index.php?title=Data_Citation_PD">Data Citation and DOIs at NOAA</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="panel-heading">Metadata</div>
+            <div class="panel-body">
+                <ul>
+                    <li><a href="http://www.ncddc.noaa.gov/metadata-standards/metadata-training/">Metadata Training</a></li>
+                    <li><a href="https://nosc.noaa.gov/EDMC/PD.DD.php">NOAA Data Documentation Procedural Directive</a>
+                    </li>
+                    <li>
+                        <a href="http://www.lib.noaa.gov/uhtbin/cgisirsi/x/x/0/5/?searchdata1=ocn707093763">Ocean Exploration Program metadata guidelines</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="panel-heading">Resources</div>
+            <div class="panel-body">
+                <ul>
+                    <li>
+                        <a href="http://www.corporateservices.noaa.gov/ames/administrative_orders/chapter_212/212-15.html">NAO 212-15: Management of Environmental Data and Information</a>
+                    </li>
+                    <li><a href="https://nosc.noaa.gov/EDMC/PD.all.php">NAO 212-15 Procedural Directives</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+        <div class="col-md-3" style="text-align:center;">
+            <img width="180" src="http://www.ncdc.noaa.gov/sites/default/files/styles/261px_width/public/archive-process-diagram-updated_0.png"><br><h5>Data Archive Steps</h5></div>
+        </div>
+    <!-- /container -->
+
+    <div class="modal fade" id="parr-unsure-modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header" style="background-color:#bbb;">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Ask Us About Archiving Data at NCEI</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Please enter your questions or concerns below and we'll get in touch with you.</p>
+                        <form role="form">
+                            <div class="form-group">
+                                <textarea class="form-control" rows="3"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class=""><span class="glyphicon glyphicon-email"></span> Email</label>
+                                <input type="text" class="form-control" id="email" placeholder="Enter Email">
+                            </div>
+                        </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary">Send</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="js/parr.js"></script>
+</body>
+</html>

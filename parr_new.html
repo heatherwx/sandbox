@@ -1,0 +1,669 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+
+    <title>Data Management Best Practices</title>
+
+
+    <meta http-equiv="Content-Type" content="text/html; charset=us-ascii"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=7.5;IE=8;IE=9"/>
+
+
+    <meta name="description" content="Dedicated to building the long-term coastal data record to support environmental prediction, scientific analysis, and formulation of public policy."/>
+    <meta name="DC.keywords" content="NOAA's National Coastal Data Development Center"/>
+    <meta name="DC.description" content="Dedicated to building the long-term coastal data record to support environmental prediction, scientific analysis, and formulation of public policy."/>
+    <meta name="DC.subject" content="NOAA's National Coastal Data Development Center"/>
+    <meta name="DC.creator" content="NOAA National Coastal Data Development Center"/>
+    <meta name="DC.contributors" content=""/>
+    <meta name="DC.date.created" content="2007-08-08 10:34:17"/>
+    <meta name="DC.date.modified" content="2011-07-06 12:30:27"/>
+    <meta name="DC.date.reviewed" content="2011-07-06 12:30:27"/>
+    <meta name="DC.type" content="Document"/>
+    <meta name="DC.format" content="text/html"/>
+    <meta name="DC.language" content="en-US"/>
+    <meta name="ROBOTS" content="INDEX, NOFOLLOW"/>
+
+
+    <link rel="start" title="home"
+            href="http://www.ncddc.noaa.gov"/>
+    <link rel="contents"
+            title="table of contents for this section"
+            href="http://www.ncddc.noaa.gov/activities"/>
+
+    <link rel="shortcut icon" type="image/x-icon"
+            href="http://service.ncddc.noaa.gov/rdn/www/favicon.ico"/>
+    <link rel="home" href="http://www.ncddc.noaa.gov" title="Front page"/>
+    <style type="text/css">@import url(http://service.ncddc.noaa.gov/rdn/www/css/globalStyles.css);</style>
+    <style type="text/css">@import url(http://service.ncddc.noaa.gov/rdn/www/css/leftnavExpand.css);</style>
+    <style type="text/css">@import url(http://service.ncddc.noaa.gov/rdn/www/css/iefixes.css);</style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link href="css/parr.css" rel="stylesheet">
+
+</head>
+<body>
+<div class="shadow-outer nudge-top">
+    <div class="shadow1">
+        <div id="visual-portal-wrapper">
+            <div id="portal-top">
+                <div id="topLogoNav">
+
+                    <div align="center">
+                        <ul class="nav">
+                            <li>
+                                <a title="Select to navigate to National Oceanic and Atmospheric Administration (NOAA) Web Site" href="http://www.noaa.gov/" target="_self">NOAA HOME
+                                </a>
+                            </li>
+                            <li>
+                                <a title="Select to navigate to NOAA's Weather Entry Page" href="http://www.noaa.gov/wx.html" target="_self">WEATHER
+                                </a>
+                            </li>
+                            <li>
+                                <a title="Select to navigate to NOAA's Ocean Entry Page" href="http://www.noaa.gov/ocean.html" target="_self">OCEANS
+                                </a>
+                            </li>
+                            <li>
+                                <a title="Select to navigate to NOAA Fisheries Entry Page" href="http://www.noaa.gov/fisheries.html" target="_self">FISHERIES
+                                </a>
+                            </li>
+                            <li>
+                                <a title="Select to navigate to NOAA's Chart Entry Page" href="http://www.noaa.gov/charts.html" target="_self">CHARTING
+                                </a>
+                            </li>
+                            <li>
+                                <a title="Select to navigate to NOAA's Satellite Entry Page" href="http://www.noaa.gov/satellites.html" target="_self">SATELLITES
+                                </a>
+                            </li>
+                            <li>
+                                <a title="Select to navigate to NOAA's Climate Entry Page" href="http://www.noaa.gov/climate.html" target="_self">CLIMATE
+                                </a>
+                            </li>
+                            <li>
+                                <a title="Select to navigate to NOAA's Research Entry Page" href="http://www.noaa.gov/research.html" target="_self">RESEARCH
+                                </a>
+                            </li>
+                            <li>
+                                <a title="Select to navigate to NOAA's Coast Entry Page" href="http://www.noaa.gov/coasts.html" target="_self">COASTS
+                                </a>
+                            </li>
+                            <li>
+                                <a title="Select to navigate to NOAA Careers Web Site" href="http://www.careers.noaa.gov/" target="_self">CAREERS
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <h1 id="portal-logo">
+
+                    <div style="background-color: white;">
+                        <map name="Map" id="Map">
+                            <area shape="rect" coords="6,1,82,75" href="http://www.noaa.gov/" target="_self" alt="NOAA" title="Click to go to NOAA"/>
+                            <area shape="rect" coords="873,5,970,74" href="http://www.commerce.gov/" target="_self" alt="DOC" title="Click to go to DOC"/>
+                        </map>
+                        <img src="http://service.ncddc.noaa.gov/rdn/www/media/icons/ncei-logo.jpg"
+                                alt="NOAA" title="Click to go to NOAA" height="76"
+                                width="972" border="0" style="border-style: none"
+                                usemap="#Map"/>
+                    </div>
+
+                </h1>
+                <div>
+
+                    <div id="bottomLogoMsg">
+                        <p style="padding-top:.25em;">Formerly the National Coastal Data Development Center (NCDDC)... &nbsp;
+                            <a style="text-decoration: none !important;" href="http://www.ncei.noaa.gov/" title="Click to navigate to the NCEI site">
+                                more on NCEI
+                            </a>
+                        </p>
+                    </div>
+
+                </div>
+                <!--<div id="cruise-status-message"></div>
+                <div id="site-message"></div>-->
+            </div>
+            <table id="portal-columns">
+                <tbody>
+                <tr>
+
+                    <td id="portal-column-one">
+                        -<div class="visualPadding">
+                            <div id="navSearchForm">
+
+                                <form accept-charset="UTF-8" method="get" action="http://search.usa.gov/search" id="search_form">
+                                    <div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="âœ“" /></div>
+                                    <input id="affiliate" type="hidden" name="affiliate" value="ncddc.noaa.gov" />
+                                    <label for="query"></label>
+                                    <input autocomplete="on" class="usagov-search-autocomplete" id="query" type="text" name="query" size="15" value="Search" onfocus="this.value=''" />
+                                    <input src="http://service.ncddc.noaa.gov/rdn/www/media/icons/GO_button.jpg"
+                                            alt="Search this site" title="Search this site"
+                                            type="image" />
+                                </form>
+
+                            </div>
+                            <div id="left-side">
+
+
+                                <a name="MainNav"></a>
+                                <ul class="left_navigation">
+
+                                    <li><a href="http://www.ncddc.noaa.gov">Home</a></li>
+
+
+                                    <li><a>Who We Are</a>
+                                        <ul>
+                                            <li><a title="Select to view details about the National Centers for Environmental Information at Mississippi"
+                                                    href="http://www.ncddc.noaa.gov/about-ncddc">About</a>
+                                            </li>
+                        <!--
+                                    <li><a title="Select to view details about the office organization"
+                                                 href="" tal:attributes="href python:here.siteHost+'/about-ncddc/organization'">Organization</a>
+                                    </li>
+                        -->
+                        <!--  <li><a title="Select to view details about the office outreach efforts"
+                                  href="http://www.ncddc.noaa.gov/about-ncddc/outreach">Outreach</a>
+                          </li>
+                          <li><a title="Select to view Publications"
+                                  href="http://www.ncddc.noaa.gov/about-ncddc/publications">Publications</a>
+                          </li>
+                          <li><a title="Select to view details about lodging and logistics"
+                                  href="http://www.ncddc.noaa.gov/about-ncddc/visitor-information">Visitor Information</a>
+                          </li>-->
+                        <!--
+                                    <li><a title="Select to navigate to Regional Offices page"
+                                                 href="" tal:attributes="href python:here.siteHost+'/about-ncddc/regional-offices'">Regional Offices</a>
+                                    </li>
+                        -->
+                           </ul>
+                       </li>
+
+
+                       <li class="parentOpen"><a class="m_active">What We Do</a>
+                           <ul style="display:block">
+                               <li>
+                                   <a title="Link to What We Do"
+                                           href="http://www.ncddc.noaa.gov/activities">Introduction
+                                   </a>
+                               </li>
+                               <li>
+                                   <a title="Link to Climate Adaptation and Mitigation"
+                                           href="http://www.ncddc.noaa.gov/activities/climate">Climate Adaptation &amp; Mitigation
+                                   </a>
+                               </li>
+                               <li>
+                                   <a title="Link to Healthy Oceans Marine fisheries, habitats, and biodiversity"
+                                           href="http://www.ncddc.noaa.gov/activities/healthy-oceans">Healthy Oceans
+                                   </a>
+                               </li>
+                               <li>
+                                   <a title="Link to Science and Technology Enterprise"
+                                           href="http://www.ncddc.noaa.gov/activities/science-technology">Science &amp; Technology Enterprise
+                                   </a>
+                               </li>
+                               <li>
+                                   <a title="Link to Weather-Ready Nation"
+                                           href="http://www.ncddc.noaa.gov/activities/weather-ready-nation">Weather-Ready Nation
+                                   </a>
+                               </li>
+                           </ul>
+                       </li>
+
+
+                       <li><a>Hypoxia Watch</a>
+                           <ul>
+                               <li>
+                                   <a title="General information about the Gulf of Mexico Hypoxia Watch and access to near-real time data and map products."
+                                           href="http://www.ncddc.noaa.gov/hypoxia">Introduction
+                                   </a>
+                               </li>
+                               <li>
+                                   <a title="General information about the current or planned Summer Groundfish survey cruise schedule."
+                                           href="http://www.ncddc.noaa.gov/hypoxia/cruise-schedule">Groundfish Survey Schedule
+                                   </a>
+                               </li>
+                               <li>
+                                   <a title="Access to near-real time data and map products using shipboard measurements of bottom-dissolved oxygen as well as access to historical products dating back to the 2002 SEAMAP cruise season."
+                                           href="http://www.ncddc.noaa.gov/hypoxia/products">Map and Data Products
+                                   </a>
+                               </li>
+                           </ul>
+                       </li>
+
+
+                       <li><a href="http://ecowatch.ncddc.noaa.gov" title="Select to go to the OceanNOMADS Site">OceanNOMADS</a>
+
+                                   <ul>
+                                       <li>
+                                           <a title="OceanNomads - providing multi-access protocols to ocean prediction system output"
+                                                href="" tal:attributes="href python:here.siteHost+'/ocean-nomads'">Introduction
+                                           </a>
+                                       </li>
+                                       <li>
+                                           <a title="Global Navy Coastal Ocean Model (NCOM) - a 1/8 degree mid-latitude resolution ocean prediction system run by the Naval Oceanographic Office (NAVOCEANO) as the Navy's real-time operational global nowcast/forecast system"
+                                                   href="" tal:attributes="href python:here.siteHost+'/ocean-nomads/global-ncom'">Global NCOM
+                                           </a>
+                                       </li>
+                                       <li>
+                                           <a title="Real-time Ocean Forecast System (Atlantic) - an operational data-assimilating ocean analysis and forecasting system run daily by NOAA's Weather Service"
+                                                   href="" tal:attributes="href python:here.siteHost+'/ocean-nomads/rtofs'">RTOFS
+                                           </a>
+                                       </li>
+                                       <li>
+                                           <a title="Climate Forecast System Reanalysis (CFRS) -  provides the basis for most of NCEP Climate Prediction Center's	operational climate products"
+                                                   href="" tal:attributes="href python:here.siteHost+'/ocean-nomads/ncep'">CFSR
+                                           </a>
+                                       </li>
+                                   </ul>
+
+                         </li>
+
+
+                         <li><a>OER Data Management</a>
+                             <ul>
+                                 <li>
+                                     <a title="Select to view details about the Office of Ocean Exploration and Research "
+                                             href="http://www.ncddc.noaa.gov/oer">Introduction
+                                     </a>
+                                 </li>
+                                 <li>
+                                     <a title="Select to view details about the documentation work supporting the Office of Ocean Exploration and Research"
+                                             href="http://www.ncddc.noaa.gov/oer/metadata">Metadata Matters
+                                     </a>
+                                 </li>
+                                 <li>
+                                     <a title="Select to view details about the technology used to support the Office of Ocean Exploration and Research."
+                                             href="http://www.ncddc.noaa.gov/oer/technology">Methods and Tools
+                                     </a>
+                                 </li>
+                                 <li>
+                                     <a title="Select to view the list of Maps and Data Products supporting the Office of Ocean Exploration and Research."
+                                             href="http://www.ncddc.noaa.gov/oer/access">Maps and Data Products
+                                     </a>
+                                 </li>
+                             </ul>
+                         </li>
+
+
+                         <li><a>Metadata</a>
+                             <ul>
+                                 <li>
+                                     <a title="Select to view details about the standards-body work being supported as well as access to online references"
+                                             href="http://www.ncddc.noaa.gov/metadata-standards">Introduction
+                                     </a>
+                                 </li>
+                                 <li>
+                                     <a title="Access and information about various tools, including tools such as the Metadata Enterprise Resource Management Aid (MERMAid), used for creation, validation, management or publication of metadata."
+                                             href="http://www.ncddc.noaa.gov/metadata-standards/mermaid">MERMAid
+                                     </a>
+                                 </li>
+                                 <li>
+                                     <a title="Select to view details about the various Metadata training modules and a schedule of classes planned."
+                                             href="http://www.ncddc.noaa.gov/metadata-standards/metadata-training">Training
+                                     </a>
+                                 </li>
+                                 <li>
+                                     <a title="Select to view details about the various Metadata training modules and a schedule of classes planned."
+                                             href="http://www.ncddc.noaa.gov/metadata-standards/metadata-xml">XML Transformations
+                                     </a>
+                                 </li>
+                             </ul>
+                         </li>
+
+
+                         <li><a>Interactive Maps</a>
+                             <ul>
+                                 <li><a title="The Interactive Maps"
+                                         href="http://www.ncddc.noaa.gov/interactive-maps">Introduction</a>
+                                 </li>
+                                 <li><a title="Select to view the Interactive Maps and Digital Atlases"
+                                         href="http://www.ncddc.noaa.gov/interactive-maps/coastal-habitats">Maps and Atlases</a>
+                                 </li>
+                             </ul>
+                         </li>
+
+
+                         <li><a>Regional Collaborations</a>
+                             <ul>
+                                 <li><a title="Select to navigate to NOAA's Gulf of Mexico Data Atlas..." href="http://gulfatlas.noaa.gov">Gulf of Mexico Data Atlas</a>
+                                 </li>
+                                 <li><a title="Select to navigate to NOAA's Gulf of Mexico Disaster Response Center..." href="http://oceanservice.noaa.gov/hazards/drc/">Gulf Disaster Response Center</a>
+                                 </li>
+                                 <li><a title="Select to navigate to iGulf, an information portal for the Gulf of Mexico Region..." href="http://igulf.noaa.gov">iGulf Information Portal</a>
+                                 </li>
+                                 <li><a title="Select to navigate to the Integrated Ocean Observing System (IOOS) Program Site. IOOS delivers the data and information needed to increase understanding of our oceans and coasts, so decision makers can take action to improve safety, enhance the economy, and protect the environment..." href="http://www.ioos.noaa.gov/">Ocean Observing System</a>
+                                 </li>
+                                 <li><a title="Select to navigate to the Office of Ocean Exploration and Research (OER), a data portal providing a unique end-to-end system for expeditions and ensuring data	discovery, access, and archival for	perpetuity..." href="http://oceanexplorer.noaa.gov//">Ocean Exploration and Research</a>
+                                 </li>
+                                 <li><a title="Select to navigate to the Harmful Algal	Blooms Observing System (HABSOS), an online, integrated information system for managing HAB data, events, and effects..." href="http://habsos.noaa.gov">Harmful Algal Blooms Monitoring</a>
+                                 </li>
+                                 <li><a title="Select to navigate to the Phytoplankton Monitoring Network (PMN), a data and information portal promoting a better understanding of harmful algal blooms by way of	volunteer monitoring..." href="http://products.coastalscience.noaa.gov/pmn/default.aspx">Phytoplankton Monitoring</a>
+                                 </li>
+                             </ul>
+                         </li>
+
+                     </ul>
+
+
+
+                 </div>
+                 <div id="navBottom">
+
+                     <div id="oceanFacts">
+                         <div id="oceanFactsText">
+                             <div id="rssBlock">...</div>
+                             <br />
+                             <a class="more" href="http://oceanservice.noaa.gov/facts/" target="_self">(More Facts)</a>
+                         </div>
+                     </div>
+
+                 </div>
+             </div>
+                    </td>
+
+
+                    <td id="portal-column-content">
+                        <div id="portal-breadcrumbs">
+
+                            <span id="breadcrumbs-you-are-here">You are here:</span>
+                            <a href="http://www.ncddc.noaa.gov">Home</a>
+                            <span class="breadcrumbSeparator">&#8594;</span>
+<span dir="ltr">
+  <a href="http://www.ncddc.noaa.gov/activities">Center Activities</a>
+  <span class="breadcrumbSeparator">&#8594;</span>
+</span>
+<span dir="ltr">
+  <a href="http://www.ncddc.noaa.gov/activities/science-technology">Science and Technology</a>
+  <span class="breadcrumbSeparator">&#8594;</span>
+</span>
+<span dir="ltr">
+  <span>Scientific Data Stewardship</span>
+</span>
+
+
+                        </div>
+
+                        <div id="content">
+                            <div class="documentContent">
+                                <div class="documentActions">
+
+                                    <ul>
+                                        <li>
+                                            <a href="javascript:this.print();">
+                                                <img src="http://service.ncddc.noaa.gov/rdn/www/media/icons/print_icon.gif"
+                                                        alt="Print this page" title="Print this page"/>
+                                            </a>
+                                        </li>
+                                    </ul>
+
+                                </div>
+
+                                <h1>Scientific Data Stewardship</h1>
+
+                                <p>
+                                                                        <img class="image-right-noborder"
+                                            title="Data Management Best Practices"
+                                            src="http://service.ncddc.noaa.gov/rdn/www/media/activities/data-management.jpg"
+                                            alt="Data Management Best Practices"
+                                                                                width="200px;"/>
+                                    NCEI provides data management services for NOAA data providers.</p>
+
+                                <p>The following information is provided as reference material to users interested in planning and executing data management.
+                                    <br><br><br><br><br><br><br><br><br>
+
+                                </p>
+
+                                <div id="parr" style="border:thin solid #aaa;padding:10px;">
+                                    <span style="text-align:center;font-weight:bold;font-size-large;">Do you need to satisfy PARR requirements?</span>
+                                    <div class="" id="parr-question-buttons" style="margin-top:10px;">
+                                        <button class="btn btn-sm btn-primary" type="button" data-toggle="collapse" data-target="#parr-yes"
+                                                aria-expanded="false" aria-controls="parr-yes">
+                                            <span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Yes
+                                        </button>
+                                        <button class="btn btn-sm btn-primary" type="button" data-toggle="collapse" data-target="#archive-options"
+                                                aria-expanded="false" aria-controls="archive-options">
+                                            <span class="glyphicon glyphicon-remove" aria-hidden="true"></span> No
+                                        </button>
+                                        <button class="btn btn-sm btn-default" type="button" data-toggle="collapse" data-target="#parr-unsure"
+                                                aria-expanded="false" aria-controls="parr-unsure">
+                                            <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Unsure / Help Me Decide
+                                        </button>
+                                    </div>
+                                    <div class="collapse" id="parr-unsure">
+
+                                    <h4>What is Public Access to Research Results (PARR)?</h4>
+
+                                    <p>The White House Office of Science and Technology Policy (OSTP) has directed Federal agencies to develop plans to make the published results of federally funded research freely available to the public within one year of publication and requiring researchers to better account for and manage the digital data resulting from federally funded scientific research.
+                                        <a class="btn btn-xs btn-default" title="Click for more information" data-toggle="collapse" data-target="#what">show more</a>
+
+                                    <div id="what" class="collapse details">
+                                        Details:
+                                        <a href="https://www.whitehouse.gov/sites/default/files/microsites/ostp/ostp_public_access_memo_2013.pdf">OSTP PARR Memorandum</a>
+                                    </div>
+                                    </p>
+
+                                    <h4>Who does the NOAA PARR Plan apply to?</h4>
+
+                                    <p>(the short answer or teaser)
+                                        <a class="btn btn-xs btn-default" title="Click for more information" data-toggle="collapse" data-target="#who">show more</a>
+
+                                    <div id="who" class="collapse details">The NOAA Data Sharing Policy imposes requirements both on NOAA Programs that issue grants and on grant recipients, and to indicate that grant programs must consider whether the resulting data are likely to be worthy of archiving. All grants, contracts, and cooperative agreements will include requirements for data management planning consistent with the goals of the Data Sharing Policy. Terms and Conditions will include language that requires scientists seeking funding to describe how and where they will make their data available to the public and explicitly require the data that underlie the conclusions of peer-reviewed scientific publications be made available for discovery, retrieval, and analysis for free at the time of publication. Appropriate exceptions to these guidelines will also be outlined.</div>
+                                    </p>
+                                    <h4>How do I comply with PARR?</h4>
+                                    <ul>
+                                        <li>Do this</li>
+                                        <li>And this</li>
+                                    </ul>
+                                    <h4>What is the timeline for NOAA PARR compliance?</h4>
+
+                                    <p>NOAA intends to have intramural publications and data comply first, followed by extramural results. This will enable NOAA to test new requirements and processes internally before imposing them externally. The OSTP memo is not retrospective.
+                                        <a class="btn btn-xs btn-default" title="Click for more information" data-toggle="collapse" data-target="#parr-timeline">show more</a>
+
+                                    <div id="parr-timeline" class="collapse details">
+                                        <p>New policies or policy changes established by the NOAA PARR Plan shall apply only to environmental data generated or manuscripts submitted after the publication date of the respective policies. Once the plans take effect, agencies shall report twice yearly (January 1 and July 1) to OSTP and OMB.</p>
+
+                                        <p>Timeline details:
+                                            <a href="http://docs.lib.noaa.gov/noaa_documents/NOAA_Research_Council/NOAA_PARR_Plan_v5.04.pdf">NOAA PARR Plan</a>
+                                        </p></div>
+                                    </p>
+
+                                    <h4>What is NCEI?</h4>
+
+                                    <p>NOAA's National Centers for Environmental Information (NCEI) are responsible for hosting and providing access to one of the most significant archives on earth, with comprehensive oceanic, atmospheric, and geophysical data. NCEI is the Nation's leading authority for environmental information.
+                                        <a class="btn btn-xs btn-default" title="Click for more information" data-toggle="collapse" data-target="#parr-ncei">show more</a>
+
+                                    <div id="parr-ncei" class="collapse details">
+                                        <a href="http://www.ncei.noaa.gov/">NCEI Website</a></div>
+                                    </p>
+
+                                    <h4>Where do I find more infomation?</h4>
+                                    <ul>
+                                        <li>Contact </li>
+                                        <li>
+                                            <a href="http://docs.lib.noaa.gov/noaa_documents/NOAA_Research_Council/NOAA_PARR_Plan_v5.04.pdf">NOAA
+                                                Plan for Increasing Public Access to Research Results</a></li>
+                                        <li>
+                                            <a href="https://www.whitehouse.gov/blog/2013/02/22/expanding-public-access-results-federally-funded-research">White
+                                                House: Expanding Public Access to the Results of Federally Funded Research</a>
+                                        </li>
+                                    </ul>
+
+                                    <div class="question-box"><h5>Does PARR apply to your data?</h5>
+                                        <button type="button" class="btn btn-sm btn-primary" data-target="#">
+                                            <span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Yes
+                                        </button>
+                                        <button type="button" class="btn btn-sm btn-primary" data-toggle="collapse" data-target="#archive-options"
+                                                aria-expanded="false" aria-controls="archive-options">
+                                            <span class="glyphicon glyphicon-remove" aria-hidden="true"></span> No
+                                        </button>
+                                        <button type="button" class="btn btn-sm btn-default" data-toggle="modal" data-target="#parr-unsure-modal">
+                                            <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Still Unsure?
+                                        </button>
+                                    </div>
+                                </div>
+                                </div>
+
+                                <h2>Data Management Best Practices</h2>
+                                <p>
+                                    Data Management, as defined by
+                                    <a class="gov-narrative-link" title="Link to NOAA's Administrative Order 212-15" href="http://www.corporateservices.noaa.gov/ames/administrative_orders/chapter_212/212-15.html" target="_self">NOAA's Administrative Order 212-15,
+                                    </a>
+                                    "consists of two major activities conducted in coordination: data management services and data stewardship. They
+                                    constitute a comprehensive end-to-end process including movement of data and information from the observing system
+                                    sensors to the data user. This process includes the acquisition, quality control, metadata cataloging, validation,
+                                    reprocessing, storage, retrieval, dissemination, and archival of data."
+                                </p>
+                                <ul>
+                                    <li>
+                                        <a href="javascript: void(0)" class="pub-link"
+                                                onclick="window.open('http://service.ncddc.noaa.gov/rdn/www/media/documents/activities/community-best-practices.pdf','prodwin','width=800,height=600,toolbar=0,scrollbars,resizable').focus(); return false;"
+                                                title="Download Data Management Best Practices">Community Best Practices (16 KB)</a>
+                                    </li>
+                                </ul>
+                                <h2>NOAA Data Management Policy</h2>
+                                <ul>
+                                    <li>
+                                        <a class="gov-link" title="Link to Management of environmental and geospatial data and information" href="http://www.corporateservices.noaa.gov/ames/administrative_orders/chapter_212/212-15.html" target="_self">Management of environmental and geospatial data and information
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript: void(0)" class="pub-link"
+                                                onclick="window.open('http://service.ncddc.noaa.gov/rdn/www/media/documents/activities/EDMC_PD-DMP_transmittal_v1.pdf','prodwin','width=800,height=600,toolbar=0,scrollbars,resizable').focus(); return false;"
+                                                title="Download Data Management Planning Procedural Directive">Data Management Planning Procedural Directive (435 KB)</a>
+                                    </li>
+                                    <li>
+                                        <a class="gov-link" title="Link to NOAA Environmental Data Management Committee Procedural Directives" href="https://www.nosc.noaa.gov/EDMC/PD.all.php" target="_self">NOAA Environmental Data Management Committee Procedural Directives
+                                        </a>
+                                    </li>
+                                </ul>
+                                <h2>Data Management Sharing and Planning References</h2>
+                                <ul>
+                                    <li>
+                                        <a class="gov-link" title="Link to National Institutes of Health Data Sharing Policy and Implementation Guidance" href="http://grants.nih.gov/grants/policy/data_sharing/data_sharing_guidance.htm" target="_self">National Institutes of Health Data Sharing Policy and Implementation Guidance
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="gov-link" title="Link to National Science Foundation: Dissemination and Sharing of Research Results" href="http://www.nsf.gov/bfa/dias/policy/dmp.jsp" target="_self">National Science Foundation: Dissemination and Sharing of Research Results
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="gov-link" title="Link to National Science Foundation: Data Management Plan Requirements" href="http://www.nsf.gov/eng/general/dmp.jsp" target="_self">National Science Foundation: Data Management Plan Requirements
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="nongov-link" title="Link to A tool for making a National Science Foundation plan" href="http://www.iedadata.org/compliance/plan" target="_self">A tool for making a National Science Foundation plan
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="gov-link" title="Link to NASA Data and Information Policy" href="http://science.nasa.gov/earth-science/earth-science-data/data-information-policy/" target="_self">NASA Data and Information Policy
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="nongov-link" title="Link to Digital Curation Centre (UK)" href="http://www.dcc.ac.uk/resources/data-management-plans" target="_self">Digital Curation Centre (UK)
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="nongov-link" title="Link to DMP Preparation Guide" href="http://www.icpsr.umich.edu/files/ICSPR/access/dataprep.pdf" target="_self">DMP Preparation Guide
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="gov-link" title="Link to Interagency Working Group on Digital Data Workshop Report" href="http://www.cendi.gov/publications/pub_CENDI-2011-1.pdf" target="_self">Interagency Working Group on Digital Data Workshop Report
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="nongov-link" title="Link to Inter-University Consortium for Political and Social Research Data Management and Curation" href="http://www.icpsr.umich.edu/icpsrweb/content/datamanagement/index.html" target="_self">Inter-University Consortium for Political and Social Research Data Management and Curation
+                                        </a>
+                                    </li>
+                                </ul>
+                                <h2>Data Management Plans and Organizational Guidance/Examples</h2>
+                                <ul>
+                                    <li>
+                                        <a class="gov-link" title="Link to Data management strategy for the Ocean Exploration Program" href="http://www.lib.noaa.gov/uhtbin/cgisirsi/x/x/0/5/?searchdata1=ocn707095023" target="_self">Data management strategy for the Ocean Exploration Program
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="gov-link" title="Link to Ocean Exploration Program metadata guidelines" href="http://www.lib.noaa.gov/uhtbin/cgisirsi/x/x/0/5/?searchdata1=ocn707093763" target="_self">Ocean Exploration Program metadata guidelines
+                                        </a>
+                                    </li>
+                                </ul>
+                                <h2>Data Management Cookbook</h2>
+
+                                <p>
+                                    The
+                                    <a class="nongov-narrative-link" title="Link to Data Management Practices written by Raymond Pollard, Gwenaelle MoncoiffÃ©, and Todd O`Brien" href="http://www.imber.info/index.php/Science/Working-Groups/Data-Management/Cookbook" target="_self">Cookbook
+                                    </a>
+                                    is a step-by-step guide to good data management practices written by Raymond Pollard, Gwenaelle Moncoiff&#233;, and
+                                    Todd O`Brien. We believe this document will be useful for both early-career and more established scientists whose work
+                                    relies on the collection and analysis of high-quality data.
+                                </p>
+
+                            </div>
+                        </div>
+
+                    </td>
+
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<div id="portal-footer">
+
+    <a href="http://www.commerce.gov/" title="U.S. Department of Commerce" target="_self">U.S. Department of Commerce</a> |
+    <a href="http://www.noaa.gov" title="National Oceanic &amp; Atmospheric Administration" target="_self">NOAA</a> |
+    <a href="http://www.nesdis.noaa.gov" title="National Environmental Satellites, Data, and Information Services" target="_self">NESDIS</a> |
+    <a href="http://www.ncei.noaa.gov" title="National Centers for Environmental Information" target="_self">NCEI</a>
+    <!--<a href="http://www.ncddc.noaa.gov" title="National Centers for Environmental Information @ Stennis" target="_self" >NCEI@Stennis</a>-->
+    <br/>
+    <a href="http://www.noaa.gov/disclaimer.html" title="Link to National Oceanic &amp; Atmospheric Administration Disclaimer" target="_self">Disclaimer</a> |
+    <a href="http://www.noaa.gov/privacy.html" title="Link to National Oceanic &amp; Atmospheric Administration Privacy Policy">Privacy Policy</a> |
+    <a href="http://www.copyright.gov/title17/92chap4.html#403" title="Copyright Notice">Copyright Notice</a> |
+    <a href="http://www.usa.gov" target="_self" title="The U.S. Government's Official Web Portal">USA.gov</a>
+    <br/>
+    <a href="http://www.cio.noaa.gov/services_programs/info_quality.html" title="Link to National Oceanic &amp; Atmospheric Administration Information Quality" target="_self">Information Quality</a> |
+    <a href="http://www.rdc.noaa.gov/~foia/" title="Link to National Oceanic &amp; Atmospheric Administration FOIA">Freedom of Information Act (FOIA)</a>
+    <br/>
+    <a href="http://www.ncddc.noaa.gov/about-ncddc"
+            title="Contact NCEI-MS">Customer Service</a> |
+    <a href="mailto:ncddcwebmaster@noaa.gov?subject=NCDDC%20Public%20web%20site" title="Email NCEI-MS webmaster">ncddcwebmaster@noaa.gov</a>
+    <br/>
+    <a href="http://www.ncddc.noaa.gov/message-host/survey/www-lead.html"
+            title="NOAA Website Customer Satisfaction Survey">Submit User Comments</a>
+    <br/>
+
+    <p style="margin-top:3px;">
+        <img src="http://service.ncddc.noaa.gov/rdn/www/media/icons/asterisk.png"
+                title="Links in narrative blocks preceeded by this type of icon take you to Non Federal/State Government sites..."
+                alt="non-gov narrative image"/>
+        <img src="http://service.ncddc.noaa.gov/rdn/www/media/icons/ex_link_icon.gif"
+                title="Links in lists preceeded by this type of icon take you to Non Federal/State Government sites..."
+                alt="non-gov list image"/>
+        <acronym title="Links preceeded by either type of icon take you to Non Federal/State Government sites...">Non Government Sites</acronym>
+  <span>
+   <img src="http://service.ncddc.noaa.gov/rdn/www/media/icons/print_icon.gif"
+           alt="Print this page..." title="Print this page..."/>
+  <a href="javascript:this.print();" title="Print this page...">Print this page</a>
+</span>
+    </p>
+
+    <p style="margin-top:5px;">
+        Revised: <span>December 07, 2015 at  8:58 AM Central</span>
+    </p>
+
+</div>
+
+<!--<script src="http://service.ncddc.noaa.gov/rdn/www/js/jquery-1.4.2.min.js"></script>-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="http://service.ncddc.noaa.gov/rdn/www/js/globalScripts.js"></script>
+<script src="http://service.ncddc.noaa.gov/rdn/www/js/leftnavExpand.js"></script>
+<script src="http://service.ncddc.noaa.gov/message-host/syndication/aggregate.js"></script>
+<script src="http://service.ncddc.noaa.gov/message-host/message/message.js"></script>
+<script src="http://service.ncddc.noaa.gov/message-host/hypoxia/status.js"></script>
+
+<script src="js/parr.js"></script>
+
+
+</body>
+</html>
