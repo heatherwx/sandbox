@@ -11,8 +11,12 @@
     width: 375px;
 }*/
 
-p, a  {
+p, li {
     font-size: smaller;
+}
+
+.documentContent  a {
+    margin: 0px;
 }
 
 h2  {
@@ -40,12 +44,13 @@ a.parr-question {
 }
 
 #parr-unsure > p  {
-    margin: 2px auto auto 20px;
+    margin: 10px auto auto 20px;
 
 }
 
 #parr-unsure > div.details  {
     margin: 0 20px;
+    font-size: smaller;
 }
 
 #parr-unsure > h4  {
