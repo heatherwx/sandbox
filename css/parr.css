@@ -9,12 +9,14 @@
 .ui-state-default   {
     border: none;
     background: none;
-    background-color: #cde;
+    /*background-color: #cde;*/
+    background-color: #ddd;
     color: #000;
 }
 
 .ui-accordion-header:hover   {
     background-color: #bcd;
+    color: #000;
 }
 
 p   {line-height: normal;}
