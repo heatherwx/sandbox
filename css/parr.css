@@ -1,6 +1,96 @@
 /*! * PARR page CSS (HMcCullough) */
 
 
+.accordion-expand-holder {
+    text-align: center;
+    margin: 10px auto;
+}
+
+.ui-state-default   {
+    border: none;
+    background: none;
+    background-color: #cde;
+    color: #000;
+}
+
+.ui-accordion-header:hover   {
+    background-color: #bcd;
+}
+
+p   {line-height: normal;}
+
+.documentContent li {
+    list-style: disc;
+}
+
+#faq a {
+    text-decoration: none;
+    margin: auto;
+    color: #00a;
+}
+
+#faq a:hover {
+    text-decoration: underline;
+}
+
+.bs-callout {
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #eee;
+    border-left-width: 5px;
+    border-radius: 3px;
+    width: 300px;
+    background-color: #eee;
+}
+.bs-callout h4 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+.bs-callout p:last-child {
+    margin-bottom: 0;
+}
+.bs-callout code {
+    border-radius: 3px;
+}
+.bs-callout+.bs-callout {
+    margin-top: -5px;
+}
+.bs-callout-default {
+    border-left-color: #777;
+}
+.bs-callout-default h4 {
+    color: #777;
+}
+.bs-callout-primary {
+    border-left-color: #428bca;
+}
+.bs-callout-primary h4 {
+    color: #428bca;
+}
+.bs-callout-success {
+    border-left-color: #5cb85c;
+}
+.bs-callout-success h4 {
+    color: #5cb85c;
+}
+.bs-callout-danger {
+    border-left-color: #d9534f;
+}
+.bs-callout-danger h4 {
+    color: #d9534f;
+}
+.bs-callout-warning {
+    border-left-color: #f0ad4e;
+}
+.bs-callout-warning h4 {
+    color: #f0ad4e;
+}
+.bs-callout-info {
+    border-left-color: #5bc0de;
+}
+.bs-callout-info h4 {
+    color: #5bc0de;
+}
 
 /*h1 {
     margin-bottom: 20px;
@@ -11,7 +101,7 @@
     width: 375px;
 }*/
 
-p, li {
+/*p, li {
     font-size: smaller;
 }
 
@@ -31,7 +121,7 @@ a.parr-question {
     text-decoration: none;
     border-top: thin solid #bbb;
     /*width: 375px;*/
-    text-align: left;
+/*    text-align: left;
 }
 
 #parr-unsure, #archive-options {
@@ -56,7 +146,7 @@ a.parr-question {
 #parr-unsure > h4  {
     /*margin: 20px auto;*/
     /*padding: 7px;*/
-    border-bottom: thin solid #ddd;
+ /*   border-bottom: thin solid #ddd;
 }
 
 #parr-unsure .question-box    {
