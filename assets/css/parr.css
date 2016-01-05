@@ -28,10 +28,15 @@ p   {line-height: normal;}
 #faq a {
     text-decoration: none;
     margin: auto;
-    color: #00a;
+    color: #337ab7;
 }
 
 #faq a:hover {
+    color: #23527c;
+    text-decoration: underline;
+}
+
+a:hover {
     text-decoration: underline;
 }
 
