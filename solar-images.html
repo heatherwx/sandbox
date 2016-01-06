@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+	<title></title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+
+</head>
+<body>
+
+<div class="container">
+	<div class="row">
+		<h2>Solar Synoptic Analyses - Full Sun Drawings</h2>
+
+		<p>Synoptic <a tabindex="0" href="#" data-container="body" data-toggle="popover" data-placement="right" data-content="Synoptic: relating to or displaying conditions (as of the atmosphere or weather) as they exist simultaneously over a broad area." data-trigger="focus"><span title="Click for the definition of Synoptic" class="glyphicon glyphicon-question-sign aria-hidden="true"></span></a> maps (also known as: Neutral Line or Synoptic Drawings) illustrate daily solar surface characteristics. Forecasters draw the Sun's features, including active regions, coronal holes, neutral lines (boundary between magnetic polarities), plages, and filaments and prominences (<a href="">details below</a>). These maps assess the conditions on the sun and forecast for those conditions.
+		</p>
+	</div>
+	<div class="row">
+
+		<div class="col-md-4" style="text-align:center;border:5px solid #eee;">
+			<h4>Latest Map</h4>
+			<p>
+				<a href="http://www.swpc.noaa.gov/products/solar-synoptic-map" title="Most Recent Solar Synoptic Analysis from NOAA Space Weather Prediction Center"><img src="http://services.swpc.noaa.gov/images/synoptic-map.jpg" alt="Most Recent Solar Synoptic Analysis" height="275"></a>
+			</p>
+		</div>
+
+
+		<div class="col-md-7 col-md-offset-1">
+			<h3>Archive</h3>
+
+		</div>
+	</div>
+
+	<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+		Launch demo modal
+	</button>
+	<p><span title="" class="glyphicon glyphicon-question-sign aria-hidden="true"></span> What does this image tell me?</p>
+	Slate.com posted a video showcasing Solar Synoptic Analysis for the past 43 years. It compiles approximately 15,000 images and animates sunspots, coronal holes and other features from June, 1972 through June, 2015. <a href="http://www.slate.com/blogs/the_vault/2015/09/02/history_of_solar_observation_synoptic_maps_in_an_animated_video.html">Watch the video</a>.
+
+	<h3>Resources (Documentation)</h3>
+	<ul>
+		<li>
+			<a href="http://www.ngdc.noaa.gov/stp/space-weather/solar-data/solar-imagery/composites/full-sun-drawings/boulder/documentation/NLDrawingPoster.pdf">Historical Space Weather Forecasts and Synoptic Drawings: Explanation</a>
+		</li>
+		<li>Rigler, E.J., S.M. Hill, A.A. Reinard, and R.A. Steenburgh (2012), Solar thematic maps for space weather operations, Space Weather, 10, S08009, doi:
+			<a href="http://dx.doi.org/10.1029/2012SW000780">10.1029/2012SW000780</a></li>
+	</ul>
+
+</div>
+
+<div class="modal fade" tabindex="-1" role="dialog">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title">Modal title</h4>
+			</div>
+			<div class="modal-body">
+				Active Regions
+				Active regions are localized magnetic fields on the Sun. Areas with strong or intense magnetic fields provide energy for solar flares and coronal mass ejections (CMEs), so accurate forecasting of space weather activity requires an accurate picture of these regions.. Active regions are given official numbers by SWPC, and the drawings include the probabilities of C, M, and X class flares for the next 24 hours associated with each active region, along with the proton probability.
+				Coronal Holes
+				Coronal holes are single polarity magnetic regions that are the source of high speed solar winds which drive magnetospheric activity. Coronal holes are the most common cause of geomagnetic storms. Coronal holes have historically been identified from He I 10830A ground-based observations. The boundaries of coronal holes are shown on the synoptic drawings as lines with hash marks on the coronal hole side of the boundary line.
+				Neutral Lines
+				Large magnetic field structures of one magnetic polarity have a ‘neutral line’ at the boundary of the different magnetic polarities of the fields. Neutral lines are associated with flaring in active regions, and filaments/prominences are often associated with the neutral lines on a quiet sun. Neutral lines appear as dashed lines on the synoptic drawings and the forecaster indicates the polarity of the magnetic field on either side of the neutral line with + (positive) and – (negative) signs.
+				Plages
+				Plages make up most of an Active Region, and appear bright in conjunction with the dark sunspots. Plages have strong magnetic fields but disorganized magnetic fields, unlike the highly organized fields of sunspots. In the synoptic drawings, plages are colored red. It is quite normal to have regions of plage with no sunspots, which do not receive an official number since they are not considered active regions and are unlikely to produce solar flares. Plage regions are the chief source of UV variability from the sun, however.
+
+
+				Filaments and Prominences
+				Highly-stable regions of high density gas in the low density corona are called filaments. When these occur near the limb and can be seen protruding from the corona, often in spectacular fashion, they are called prominences. When they erupt they can be a geomagnetic storm threat, but the eruptions are usually slow and don’t often drive large storms. The filaments and prominences are drawn as outlines with hash marks.
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				<button type="button" class="btn btn-primary">Save changes</button>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script type="">
+	$(function () {
+		$('[data-toggle="popover"]').popover()
+		})
+</script>
+</body>
+</html>
